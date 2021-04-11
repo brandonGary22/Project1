@@ -1,0 +1,3 @@
+[2021-04-11 02:56:24.583] [remoteagent] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/root/.vscode'
+[2021-04-11 02:56:24.583] [remoteagent] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/root/.vscode'
+[2021-04-11 02:56:25.022] [remoteagent] [error] /root/.local/share/code-server/extensions {"errno":-2,"code":"ENOENT","syscall":"scandir","path":"/root/.local/share/code-server/extensions"}

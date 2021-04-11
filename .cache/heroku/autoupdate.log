@@ -1,0 +1,13 @@
+[2021-02-20T20:23:04.004Z] starting `/usr/local/lib/heroku/bin/heroku update --autoupdate` from /usr/local/lib/heroku/bin/run version
+waiting until 2021-02-20T21:23:03.976Z to update
+[2021-04-10T15:18:54.925Z] starting `/usr/local/lib/heroku/bin/heroku update --autoupdate` from /usr/local/lib/heroku/bin/run login
+waiting until 2021-04-10T16:18:54.903Z to update
+waiting until 2021-04-10T16:19:43.505Z to update
+waiting until 2021-04-10T16:20:26.770Z to update
+waiting until 2021-04-10T16:20:26.770Z to update
+waiting until 2021-04-10T16:20:26.770Z to update
+waiting until 2021-04-10T16:20:26.770Z to update
+waiting until 2021-04-10T16:20:26.770Z to update
+waiting until 2021-04-10T16:25:29.366Z to update
+waiting until 2021-04-10T16:26:00.751Z to update
+waiting until 2021-04-10T16:26:00.751Z to update

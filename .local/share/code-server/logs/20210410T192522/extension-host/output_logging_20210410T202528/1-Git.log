@@ -1,0 +1,75 @@
+Looking for git in: git
+Using git 2.25.1 from git
+> git rev-parse --git-dir
+Open repository: /root/Project1
+> git status -z -u
+> git check-ignore -v -z --stdin
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :db/migrate/20210410172413_create_posts.rb
+> git ls-files --stage -- /root/Project1/db/migrate/20210410172413_create_posts.rb
+> git cat-file -s d32f6d17d5ac2fe42618d6f3075aeeecac5bbab8
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show --textconv :app/assets/javascripts/application.js
+> git ls-files --stage -- /root/Project1/app/assets/javascripts/application.js
+> git cat-file -s 25507561cc2619907fec71741d2e29f53c5e8a9f
+> git check-ignore -v -z --stdin
+> git show --textconv :Gemfile
+> git ls-files --stage -- /root/Project1/Gemfile
+> git cat-file -s 5cb0a603fe944481782a281e4069a2c26b1c7c02
+> git show --textconv :config/application.rb
+> git ls-files --stage -- /root/Project1/config/application.rb
+> git cat-file -s 55c2299a064d424c4803e0f82fc98f2fbfddd05a
+> git show --textconv :app/models/post.rb
+> git ls-files --stage -- /root/Project1/app/models/post.rb
+> git cat-file -s 578e64b54506a2519c5f35cf8735047c81cae4eb
+> git check-ignore -v -z --stdin
+> git show --textconv :app/controllers/posts_controller.rb
+> git ls-files --stage -- /root/Project1/app/controllers/posts_controller.rb
+> git cat-file -s 87be323c9d66710e1e358fe6cebb539d61743e53
+> git check-ignore -v -z --stdin
+> git show --textconv :config/routes.rb
+> git ls-files --stage -- /root/Project1/config/routes.rb
+> git cat-file -s 56608b429c6c500f772be24b1b81288071590be1
+> git show --textconv :app/assets/stylesheets/application.scss
+> git ls-files --stage -- /root/Project1/app/assets/stylesheets/application.scss
+> git cat-file -s cbd46a7afcf4100bb70bf9028c89faed85e46397
+> git check-ignore -v -z --stdin
+> git show --textconv :app/assets/javascripts/application.js
+> git ls-files --stage -- /root/Project1/app/assets/javascripts/application.js
+> git cat-file -s 25507561cc2619907fec71741d2e29f53c5e8a9f
+> git check-ignore -v -z --stdin
+> git show --textconv :Gemfile
+> git ls-files --stage -- /root/Project1/Gemfile
+> git cat-file -s 5cb0a603fe944481782a281e4069a2c26b1c7c02
