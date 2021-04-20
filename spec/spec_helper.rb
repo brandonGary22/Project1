@@ -1,6 +1,10 @@
 
 require 'simplecov'
-SimpleCov.start
+SimpleCov.start 'rails' do
+  add_filter '/bin/'
+  add_filter '/db/'
+  add_filter '/spec/' # for rspec
+end
 
 # Previous content of test helper now starts here
 
