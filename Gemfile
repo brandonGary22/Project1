@@ -29,6 +29,9 @@ gem 'jbuilder', '~> 2.5'
 #added for simplecov
 gem 'simplecov', require: false, group: :test
 
+#added for authentication
+gem 'devise'
+
 group :production do
   gem 'pg', '~> 0.21' # for Heroku deployment
   gem 'rails_12factor'
@@ -50,6 +53,9 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.7'
   #ran into errors adding this bc theres already a capybara down below
   #gem 'capybara'
+  #factorybot for devise testing
+  gem 'factory_bot_rails'
+
 end
 
 group :development do

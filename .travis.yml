@@ -10,3 +10,11 @@ before_install:
 
 script:
  - bundle exec rspec
+ 
+deploy:
+ provider: heroku
+ api_key: ca55f178-c9db-4bb3-8ede-ac15da3049f7
+ app: baklabuto
+ run: "rake db:migrate"
+ on:
+  branch: main_or_master
