@@ -1,0 +1,68 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">Brandons Dope App</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+          <a class = "nav-link" <%= link_to 'Home', projects_path %> </a>
+          </li>
+        </ul>
+      
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+       <ul class="navbar-nav mr-auto">
+         <li class="nav-item active">
+           <% if user_signed_in? %>
+             <a class = "nav-link" <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %></a> 
+             <li>
+             <a class = "nav-link" <%= link_to 'Logout', destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></a>
+             <li>
+           <% else %>
+             <a class = "nav-link"<%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> </a>
+             <li>
+             <a class = "nav-link"<%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %> </a>
+             <li>
+           <% end %>
+         </li>
+       </ul>
+     </div>
+   </nav>
+
+<br>
+
+<div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3">Log in</h1>
+        <p> Welcome! I hope you enjoy, this took me forever</p>
+      </div>
+</div>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+   <label for="exampleInputEmail1">Email address</label>
+   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="field">
+   <label for="exampleInputPassword1">Password</label>
+   <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" <%= f.password_field :password, autocomplete: "current-password" %>
+  </div>
+
+  <% if devise_mapping.rememberable? %>
+    <div class="field">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+    </div>
+  <% end %>
+
+  <div class="actions">
+   <button type="submit" class="btn btn-primary">log in</button>
+  </div>
+<% end %>
+
+<p></p>
+
+<%= render "devise/shared/links" %>

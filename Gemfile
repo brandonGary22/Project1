@@ -32,6 +32,12 @@ gem 'simplecov', require: false, group: :test
 #added for authentication
 gem 'devise'
 
+#boostrap add
+gem 'bootstrap', '~> 4.6.0'
+
+#jquery gem
+gem 'jquery-rails'
+
 group :production do
   gem 'pg', '~> 0.21' # for Heroku deployment
   gem 'rails_12factor'

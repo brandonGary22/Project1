@@ -1,3 +1,26 @@
+<div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3">Forgot your password did ya now?</h1>
+        <p>Its ok, enter your email and well let you change your password. Do better next time</P>
+        </div>
+    </div>
+
+<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field">
+   <label for="exampleInputEmail1">Email address</label>
+   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"<%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="actions">
+  <button type="submit" class="btn btn-primary">Send me reset password instructions</button>
+  </div>
+<% end %>
+<p></p>
+<%= render "devise/shared/links" %>
+
+
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <a class="navbar-brand" href="#">Brandons Dope App</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,17 +54,3 @@
    </nav>
 
 <br>
-
-
-<div class="jumbotron">
-    <div class="container">
-    
-    <h1 class="display-3">Create A New Project</h1>
-    <p></p>
-    <div class="alert alert-primary" role="alert">
-    <%= render 'form', project: @project %>
-    
-    </div>
-    </div>
-</div>
-<%= link_to 'Back', projects_path %>
